@@ -1,0 +1,6 @@
+.env
+build/
+devData/
+devConfig/* Версия.json
+developerConfig_*.json
+dev_*
