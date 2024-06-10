@@ -1,0 +1,18 @@
+{
+    "$type": "DT.ConfigurationRepository.Configuration.DeveloperConfig,DT_ConfigurationRepository",
+    "GuardDb": "Security",
+    "DeveloperDataFolder": "devData",
+    "GuardPort": 7203,
+    "controlCenterPort": 7200,
+    "adminUIPort": 7204,
+    "nodeApiPort": 7201,
+    "archiveApiPort": 7202,
+    "systemRequestsPort": 7292,
+    "snmpPort": 7294,
+    "nodeListeningPort": 7290,
+    "clearOnStart": false,
+    "workSpace": "devConfig",
+    "precompileSerialize": false,
+    "workSpaceOnline": true,
+    "ignoreVersionCheck": true
+}
