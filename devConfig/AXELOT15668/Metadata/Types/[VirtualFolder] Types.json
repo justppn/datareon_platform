@@ -1,0 +1,12 @@
+{
+  "$type": "DT.VirtualFolder, DT_Core",
+  "Type": "Types",
+  "FolderId": "005219b6-ba66-4cad-80eb-228593aeb89c",
+  "EntityId": "6b37d9dc-2b61-44a5-80c0-02f26e7a069b",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "Типы",
+  "Description": null,
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

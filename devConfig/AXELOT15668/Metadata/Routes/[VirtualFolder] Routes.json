@@ -1,0 +1,12 @@
+{
+  "$type": "DT.VirtualFolder, DT_Core",
+  "Type": "Routes",
+  "FolderId": "005219b6-ba66-4cad-80eb-228593aeb89c",
+  "EntityId": "90f1ef48-883c-46df-a0bd-410e0ab5f54a",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "Маршруты",
+  "Description": null,
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

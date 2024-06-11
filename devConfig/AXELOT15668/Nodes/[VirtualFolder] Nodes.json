@@ -1,0 +1,12 @@
+{
+  "$type": "DT.VirtualFolder, DT_Core",
+  "Type": "ClusterNodes",
+  "FolderId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "EntityId": "6f41fbd1-594d-4b9c-8881-6dc05e86ec9a",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "Узлы",
+  "Description": null,
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

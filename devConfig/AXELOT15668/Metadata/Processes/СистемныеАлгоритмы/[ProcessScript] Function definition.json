@@ -1,0 +1,16 @@
+{
+  "$type": "DT.MdmMetadata.BusinessProcesses.ProcessScript, DT_Core",
+  "Code": null,
+  "ScriptType": "Qualifier",
+  "Variables": [],
+  "Values": [],
+  "ProcessVariable": null,
+  "FolderId": "fecd5960-e3ac-4169-b988-c25753a72737",
+  "EntityId": "acb29e50-fb36-4975-a411-f85cf89c7fce",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "СкриптВыбораСхемыОбработки",
+  "Description": null,
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

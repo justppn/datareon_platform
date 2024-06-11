@@ -1,0 +1,155 @@
+{
+  "$type": "DT.ClusterConfiguration.Cluster, DT_Core",
+  "Coordinators": [],
+  "SystemRequestsPort": 0,
+  "HeartbeatPeriod": 30000,
+  "FailThreshold": 3,
+  "FaultTolerance": 0,
+  "CounterSettings": null,
+  "Auth": null,
+  "ApiPort": 7201,
+  "ArchiveApiPort": 7202,
+  "UseCertificateForChannels": false,
+  "SnmpPort": 0,
+  "UseBalancing": true,
+  "RedirectDiagnostics": true,
+  "UseDiskControl": false,
+  "ProcessParams": {
+    "$type": "DT.MdmCommon.ProcessParams, DT_Core",
+    "ThreadCount": 5,
+    "MaxSleepingProcessCount": 100,
+    "MaxSleepingProcessMB": 200,
+    "MaxUnprocessedQueueMB": 30,
+    "MinWaitBeforeSleep": 10000,
+    "MaxRunnedRequests": 50,
+    "MaxSleepTimeMinutes": 1440,
+    "MinMessageCountForThread": 50
+  },
+  "QueueParams": {
+    "$type": "DT.Params.QueueParams, DT_Core",
+    "MinFileSizeMb": 10,
+    "MaxMessageSizeMb": 2047
+  },
+  "CommonParams": {
+    "$type": "DT.MdmCommon.CommonParams, DT_Core",
+    "MaxModuleMemoryUsage": 2
+  },
+  "NodeParams": {
+    "$type": "DT.MdmCommon.NodeParams, DT_Core",
+    "MaxUnprocessedQueueLength": 200,
+    "ExcessUnprocessedQueuePercent": 50
+  },
+  "MessageProcessingParams": {
+    "$type": "DT.MdmCommon.MessageProcessingParams, DT_Core",
+    "MaxDelayCount": 30,
+    "MaxSnapshotCount": 100,
+    "SnapshotStoreMinutes": 15
+  },
+  "GlobalDiagnosticParams": {
+    "$type": "DT.MdmCommon.DiagnosticParams, DT_Config",
+    "IssueCollectPeriod": 300,
+    "MinLogLevel": "Debug",
+    "DefaultEventLevel": "Debug",
+    "MinLogLevelHistory": "Info",
+    "DefaultEventLevelHistory": "Info",
+    "EventsLogLevels": {
+      "$type": "System.Collections.Generic.Dictionary`2[[DT.Diagnostics.Trace.MessageEventType, DT_Config],[DT.Diagnostics.Issues.IssueLevel, DT_Config]], System.Private.CoreLib"
+    },
+    "Features": [],
+    "TrackingMessages": false,
+    "EventMessageBodySizeBytes": 0,
+    "TrackingCustomProperties": true,
+    "CounterAlwaysOn": false,
+    "CounterDiagnosticData": [],
+    "SystemDiagnosticParams": {
+      "$type": "DT.MdmCommon.SystemDiagnosticParams, DT_Config",
+      "MinLogLevel": null
+    }
+  },
+  "LocalDiagnosticParams": null,
+  "CacheSettings": {
+    "$type": "DT.MdmCommon.CacheSettings, DT_Core",
+    "IssuesCacheSettings": {
+      "$type": "DT.MdmCommon.DiagnosticCacheSettings, DT_Core",
+      "MetadataRequestFrequency": 60,
+      "StopRequestSendTimeout": 10
+    },
+    "LogsCacheSettings": {
+      "$type": "DT.MdmCommon.DiagnosticCacheSettings, DT_Core",
+      "MetadataRequestFrequency": 30,
+      "StopRequestSendTimeout": 10
+    },
+    "CountersCacheSettings": {
+      "$type": "DT.MdmCommon.DiagnosticCacheSettings, DT_Core",
+      "MetadataRequestFrequency": 60,
+      "StopRequestSendTimeout": 10
+    },
+    "ComponentStatesCacheSettings": {
+      "$type": "DT.MdmCommon.DiagnosticCacheSettings, DT_Core",
+      "MetadataRequestFrequency": 5,
+      "StopRequestSendTimeout": 5
+    },
+    "MetadataSettings": {
+      "$type": "DT.MdmCommon.MetadataSettings, DT_Core",
+      "GetTimeOut": 1,
+      "CacheTime": 15
+    },
+    "SearchMessageCacheTimeMinutes": 5
+  },
+  "ReplicationSettings": null,
+  "ResolveList": [],
+  "DataBankParams": null,
+  "DiskUsageParams": {
+    "$type": "DT.DiskUsageParams, DT_Core",
+    "ArchiveMaxSizeMb": 100,
+    "TrackingMaxSizeMb": 100,
+    "DataMaxSizeMb": 1024,
+    "LogsMaxSizeMb": 100,
+    "TotalMaxSizeMb": 2048
+  },
+  "LogStorageParams": {
+    "$type": "DT.LogStorageParams, DT_Config",
+    "StoreDays": 0,
+    "FolderMaxSizeMb": 50,
+    "UncompressedDays": 0,
+    "UncompressedMaxSizeMb": 30,
+    "TempFolderMinSizeMb": 10,
+    "TempFolderMaxSizeMb": 30,
+    "TempStoreMinutes": 4
+  },
+  "DumpStorageParams": {
+    "$type": "DT.LogStorageParams, DT_Config",
+    "StoreDays": 1,
+    "FolderMaxSizeMb": 50,
+    "UncompressedDays": 1,
+    "UncompressedMaxSizeMb": 30,
+    "TempFolderMinSizeMb": 10,
+    "TempFolderMaxSizeMb": 30,
+    "TempStoreMinutes": 4
+  },
+  "UseSystemUDPSender": true,
+  "UpdateTimeout": 30000,
+  "LargeObjectQueueParams": {
+    "$type": "DT.Params.LargeObjectQueueParams, DT_Core",
+    "EnableQueue": false,
+    "MinFileSizeMb": 100,
+    "MaxMessageSizeMb": 1024,
+    "MinLargeMessageSizeMb": 50
+  },
+  "AllocationOptions": {
+    "$type": "DT.ClusterConfiguration.Allocation.AllocationOptions, DT_Core",
+    "Auto": true,
+    "CheckPeriodSecond": 300,
+    "MoveStandByServer": false,
+    "UseDbConnectAddress": true,
+    "UseNodePriorityList": false,
+    "NodePriorityList": []
+  },
+  "EntityId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "AXELOT15668",
+  "Description": "AXELOT15668",
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

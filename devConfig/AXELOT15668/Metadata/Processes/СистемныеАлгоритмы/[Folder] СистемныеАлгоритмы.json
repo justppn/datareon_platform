@@ -1,0 +1,12 @@
+{
+  "$type": "DT.Folder, DT_Core",
+  "FolderId": "f937d667-cac2-4d6d-9b8c-b3e480b1513f",
+  "ChildrenType": "Processes",
+  "EntityId": "fecd5960-e3ac-4169-b988-c25753a72737",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "СистемныеАлгоритмы",
+  "Description": "Системные алгоритмы",
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

@@ -1,0 +1,12 @@
+{
+  "$type": "DT.Folder, DT_Core",
+  "FolderId": "f937d667-cac2-4d6d-9b8c-b3e480b1513f",
+  "ChildrenType": "Processes",
+  "EntityId": "fc835300-87a9-48ba-bbf5-130136baa8b6",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "Процессы",
+  "Description": "Процессы",
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

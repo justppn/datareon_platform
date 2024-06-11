@@ -1,0 +1,16 @@
+{
+  "$type": "DT.MdmMetadata.BusinessProcesses.ProcessScript, DT_Core",
+  "Code": null,
+  "ScriptType": "OutTransform",
+  "Variables": [],
+  "Values": [],
+  "ProcessVariable": null,
+  "FolderId": "fecd5960-e3ac-4169-b988-c25753a72737",
+  "EntityId": "1ea0cc83-976b-41f9-bca3-b36374322357",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "СкриптИсходящейТрансформации",
+  "Description": null,
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

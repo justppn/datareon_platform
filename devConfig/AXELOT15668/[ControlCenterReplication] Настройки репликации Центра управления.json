@@ -1,0 +1,20 @@
+{
+  "$type": "DT.Config.ControlCenterReplication.ControlCenterReplicationSettings, DT_Core",
+  "ReplicationNodes": [
+    {
+      "$type": "DT.Config.ControlCenterReplication.ControlCenterReplicationNode, DT_Config",
+      "Order": 1,
+      "NodeId": "27411119-a3f1-42f0-a2b3-396ba24db892",
+      "RunControlCenter": true,
+      "UsedForReplication": true
+    }
+  ],
+  "FolderId": "33333333-3333-3333-0000-000000000000",
+  "EntityId": "96385274-1111-1111-1234-000000000000",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "Настройки репликации Центра управления",
+  "Description": null,
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

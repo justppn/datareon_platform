@@ -1,0 +1,12 @@
+{
+  "$type": "DT.Folder, DT_Core",
+  "FolderId": "f937d667-cac2-4d6d-9b8c-b3e480b1513f",
+  "ChildrenType": "Processes",
+  "EntityId": "2b952e3a-5279-48d7-8a49-29d642d19147",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "ПрограммныеМодули",
+  "Description": "Программные модули",
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}

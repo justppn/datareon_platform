@@ -1,0 +1,16 @@
+{
+  "$type": "DT.MdmMetadata.BusinessProcesses.ProcessScript, DT_Core",
+  "Code": null,
+  "ScriptType": "InTransform",
+  "Variables": [],
+  "Values": [],
+  "ProcessVariable": null,
+  "FolderId": "fecd5960-e3ac-4169-b988-c25753a72737",
+  "EntityId": "4ed09e76-2ad6-46bd-8ec1-f329108f994e",
+  "ClusterId": "f3b8103a-ab7c-402a-9ce7-352c9087755c",
+  "Name": "СкриптВходящейТрансформации",
+  "Description": null,
+  "Comment": null,
+  "Version": 1,
+  "TagsCollection": null
+}
