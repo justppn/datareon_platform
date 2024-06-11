@@ -1,0 +1,15 @@
+Archive_job:
+    stage: buid_archive
+    only: master
+    tags: lsru07834
+    scripts:
+        - mkdir buildPackage
+        - git config --local core.quotepath false
+        #- git log -1 --no-merges --pretty=format:"%h" | xargs -I %id% git diff-tree --no-commit-id --name-only -r %id% | xargs -I % cp -v % buildPackage/
+        #- git shortlog --no-merges master --not 1.0.0 --pretty=format:"%h" | xargs -I %id% git diff-tree --no-commit-id --name-only -r %id% | xargs -I % cp -v % buildPackage/
+        #- git log 1.0.0..1.0.1 --pretty=format:"%h" | xargs -I %id% git diff-tree --no-commit-id --name-only -r %id% | xargs -I % cp -v % /home/gitflic_runner/ImportPackage_$CI_PIPELINE_IID/
+        - git diff --name-only HEAD^ HEAD | xargs -I % cp -v % buildPackage/
+    artifacts:
+        name: ImportPackage_$CI_PIPELINE_IID
+        paths:
+        - 'buildPackage'
