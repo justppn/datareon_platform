@@ -59,13 +59,13 @@ git checkout -B "dev" "origin/dev"
 
 ```ps
 # Остановим службу
-$serviceName = "DatareonPlatform"
+$svcName = "DatareonPlatform"
   
-sc.exe stop $serviceName
+sc.exe stop $svcName
   
 # Установим разрешения на перезапуск службы для группы DomainUsers
-$perm = sc.exe sdshow $serviceName
-sc.exe sdset $serviceName ($perm -replace "D:","D:(A;;RPWPDTCR;;;DU)")
+$perm = sc.exe sdshow $svcName
+sc.exe sdset $svcName ($perm -replace "D:","D:(A;;RPWPDTCR;;;DU)")
   
 # Установим дополнительные параметры для запуска Datareon Platform в режиме разработчика
 $binPath = "C:\Program Files (x86)\Datareon\Platform\DatareonPlatformService.exe"
@@ -73,8 +73,31 @@ $configPath = $workSpace + "\developerConfig.json"
  
 $binPath = """" + $binPath + " developer -developerConfig=" + $configPath + " -asService"""
  
-sc.exe config $serviceName binPath=$binPath
+sc.exe config $svcName binPath=$binPath
   
 # Запустим службу
-sc.exe start $serviceName
+sc.exe start $svcName
+```
+
+> Пример регистрация новой службы (с правами локального администратора)
+
+```ps
+# Зададим имя и представление нового экземпляра службы. 
+# Имя должно быть уикальным!
+$svcName = "DatareonPlatformDev"
+$svcDisplayName = "Datareon platform dev"
+$svcDescription = "В режиме разработчика, на портах 8x"
+
+# Укажем путь к файлу конфигурации службы
+$configPath = "C:\Datareon\Platform\developerConfig_8x.json"
+
+# Сформируем строку запуска
+$binPath = '"C:\Program Files (x86)\Datareon\Platform\DatareonPlatformService.exe" developer -developerConfig="' + $configPath + '" -asService'
+
+# Зарегистрируем новую службу
+New-Service -Name $svcName -DisplayName $svcDisplayName -Description $svcDescription -BinaryPathName $binPath 
+
+# Установим разрешения на перезапуск службы для группы DomainUsers
+$perm = sc.exe sdshow $svcName
+sc.exe sdset $svcName ($perm -replace "D:","D:(A;;RPWPDTCR;;;DU)")
 ```
