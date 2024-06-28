@@ -92,7 +92,8 @@ $svcDescription = "В режиме разработчика, на портах 8
 $configPath = "C:\Datareon\Platform\developerConfig_8x.json"
 
 # Сформируем строку запуска
-$binPath = '"C:\Program Files (x86)\Datareon\Platform\DatareonPlatformService.exe" developer -developerConfig="' + $configPath + '" -asService'
+$binPath = "C:\Program Files (x86)\Datareon\Platform\DatareonPlatformService.exe"
+$binPath = '"' + $binPath + '" developer -developerConfig="' + $configPath + '" -asService'
 
 # Зарегистрируем новую службу
 New-Service -Name $svcName -DisplayName $svcDisplayName -Description $svcDescription -BinaryPathName $binPath 
